@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="image/money.jpg" type="image/x-icon">
+    <!-- tailwind css framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Money master</title>
 </head>
 <body>
-    
+    <head>
+        <h1 class="text-6xl text-sky-900 text-center mt-10 font-bold">Welcome Money Master</h1>
+    </head>
+    <main>
+        <section>
+            <div class="grid grid-cols-2 gap-4 mt-16 w-11/12 mx-auto">
+                <div>
+                    <img src="image/dollar-7.jpg" alt="Money-master-1" >
+                </div>
+                <div class="bg-slate-50 text-center">
+                    <!-- income -->
+                   <div class="mr-8">
+                    <h2 class="text-4xl text-dark-700 font-medium mb-8 mt-8">Income</h2>
+                    <h3 class="inline-block text-3xl">Income:</h3>
+                    <input id="income-filed"class="text-2xl rounded bg-slate-300 py-2 pl-2 ml-4" type="text" placeholder="Please input your income">
+                    </div>
+                    <!-- expenses part -->
+                    <div>
+                        <div>
+                            <h2 class="text-4xl text-dark-700 font-medium mb-8 mt-6">expenses</h2>
+                            <h3 class="inline-block text-3xl">Food:</h3>
+                            <input id="food-filed" class="text-2xl rounded bg-slate-300 py-2 pl-2 ml-4 mb-4" type="text" placeholder="food expenses">
+                        </div>
+                        <div>
+                            <h3 class="inline-block text-3xl">Rent:</h3>
+                            <input id="rent-filed" class="text-2xl rounded bg-slate-300 py-2 pl-2 ml-4 mb-4" type="text" placeholder="Rent expenses">
+                        </div>
+                      <div class="mr-10">
+                        <h3 class="inline-block text-3xl">Clothes:</h3>
+                    <input id="clothes-filed" class="text-2xl rounded bg-slate-300 py-2 pl-2 ml-4 " type="text" placeholder="clothes expenses"></div>
+                    </div>
+
+                    <!-- calculate button -->
+                    <button id="calculate-button" class="mt-8 text-2xl rounded bg-sky-500 px-6 py-2">Calculate</button>
+                    <h3 class="text-3xl mt-8 mb-8 font-bold">Total Expenses: <span id="total-expenses">5500</span></h3>
+                    <h3 class="text-3xl mt-8 font-bold">Balance: <span id="balance">5500</span></h3>
+                     <div>
+                        <h3 class="inline-block text-3xl">Save:</h3>
+                        <input class="text-2xl rounded bg-slate-300 py-2 pl-2 ml-4 mb-4 w-1/5" type="text" placeholder=""> 
+                        <h4 class="text-3xl inline-block tex-black-900 font-bold">%</h4>
+                        <button class="mt-8 text-2xl rounded bg-sky-500 px-6 py-2">Calculate</button>
+                        <h3 class="text-3xl mt-8 mb-8 font-bold">Saving Amount:: <span>5500</span></h3>
+                        <h3 class="text-3xl mt-8 font-bold mb-6">Remaining Balance: <span>5500</span></h3>
+                     </div>
+                   </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js link -->
+    <script src="js/main.js"></script>
 </body>
 </html>
